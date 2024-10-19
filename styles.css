@@ -1,0 +1,66 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Estilo para el título principal */
+h1 {
+    text-align: center;
+}
+
+/* Estilos para las secciones principales */
+.file-upload,
+.text-display,
+.operations {
+    margin: 20px 0;
+}
+
+/* Estilo para las áreas de texto */
+.text-area {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+    white-space: pre-wrap; /* Preserva los saltos de línea y espacios */
+}
+
+/* Estilos para los diferentes tipos de resaltado */
+.highlight-yellow {
+    background-color: yellow;
+}
+.highlight-orange {
+    background-color: orange;
+}
+.highlight-blue {
+    background-color: lightblue;
+}
+.highlight-green {
+    background-color: lightgreen;
+}
+
+/* Estilo para cada operación individual */
+.operation {
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de sugerencias de autocompletado */
+.suggestions {
+    border: 1px solid #ccc;
+    max-height: 100px;
+    overflow-y: auto;
+    background-color: #fff;
+    position: absolute;
+    width: 300px;
+}
+
+/* Estilo para cada elemento de sugerencia */
+.suggestion-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Efecto hover para las sugerencias */
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}

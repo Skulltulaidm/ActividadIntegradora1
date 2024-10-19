@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Procesamiento de Textos</title>
+        <!-- Enlace al archivo de estilos CSS -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>Aplicación Web de Procesamiento de Textos</h1>
+
+        <!-- Sección para cargar archivos -->
+        <div class="file-upload">
+            <h2>Cargar Archivos de Texto</h2>
+            <!-- Inputs para seleccionar archivos .txt -->
+            <input type="file" id="fileInput1" accept=".txt" />
+            <input type="file" id="fileInput2" accept=".txt" />
+            <button id="loadFilesButton">Cargar Archivos</button>
+        </div>
+
+        <!-- Sección para mostrar los textos cargados -->
+        <div class="text-display">
+            <div>
+                <h2>Texto 1</h2>
+                <!-- Área para mostrar el contenido del primer archivo -->
+                <div id="text1" class="text-area"></div>
+            </div>
+            <div>
+                <h2>Texto 2</h2>
+                <!-- Área para mostrar el contenido del segundo archivo -->
+                <div id="text2" class="text-area"></div>
+            </div>
+        </div>
+
+        <!-- Sección de operaciones -->
+        <div class="operations">
+            <!-- Operación de búsqueda -->
+            <div class="operation">
+                <h2>Buscar</h2>
+                <input
+                    type="text"
+                    id="searchPattern"
+                    placeholder="Ingrese el patrón a buscar"
+                />
+                <button id="searchButton">Buscar</button>
+                <button id="prevMatchButton">Anterior</button>
+                <button id="nextMatchButton">Siguiente</button>
+            </div>
+
+            <!-- Operación de similitud -->
+            <div class="operation">
+                <h2>Similitud</h2>
+                <button id="similarityButton" disabled>Similitud</button>
+            </div>
+
+            <!-- Operación de búsqueda de palíndromos -->
+            <div class="operation">
+                <h2>Palíndromo</h2>
+                <button id="palindromeButton">Palíndromo</button>
+            </div>
+
+            <!-- Operación de autocompletado -->
+            <div class="operation">
+                <h2>Auto-Completar</h2>
+                <input
+                    type="text"
+                    id="autocompleteInput"
+                    placeholder="Escriba para auto-completar"
+                />
+                <!-- Contenedor para mostrar sugerencias de autocompletado -->
+                <div id="autocompleteSuggestions" class="suggestions"></div>
+            </div>
+        </div>
+
+        <!-- Enlace al archivo JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
